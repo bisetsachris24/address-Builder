@@ -38,7 +38,7 @@ public class addressBuilder {
         System.out.print("Shipping Zip: ");
         String shippingZip = scanner.nextLine();
 
-        // Build output using StringBuilder
+        // Build output for Billing
         address.append(fullName).append("\n");
         address.append("Billing Address:\n");
         address.append(billingStreet).append("\n");
@@ -48,6 +48,8 @@ public class addressBuilder {
         address.append(" ");
         address.append(billingZip);
         address.append("\n");
+
+        // Building output for shipping, add append
 
         address.append("Shipping Address:\n");
         address.append(shippingStreet).append("\n");
