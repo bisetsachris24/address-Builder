@@ -38,24 +38,25 @@ public class addressBuilder {
         System.out.print("Shipping Zip: ");
         String shippingZip = scanner.nextLine();
 
-        //Building output
-        address.append(fullName).append(" ");
-        address.append("Billing Address: ");
-        address.append(billingStreet).append(" ");
-        address.append(billingCity)
-                .append(", ")
-                .append(billingState)
-                .append(" ")
-                .append(billingZip)
-                .append("\n");
+        // Build output using StringBuilder
+        address.append(fullName).append("\n");
+        address.append("Billing Address:\n");
+        address.append(billingStreet).append("\n");
+        address.append(billingCity);
+        address.append(", ");
+        address.append(billingState);
+        address.append(" ");
+        address.append(billingZip);
+        address.append("\n");
 
-        address.append("Shipping Address: ");
-        address.append(shippingStreet).append(" ");
-        address.append(shippingCity)
-                .append(", ")
-                .append(shippingState)
-                .append(" ")
-                .append(shippingZip);
+        address.append("Shipping Address:\n");
+        address.append(shippingStreet).append("\n");
+        address.append(shippingCity);
+        address.append(", ");
+        address.append(shippingState);
+        address.append(" ");
+        address.append(shippingZip);
+
 
         // Print final result
         System.out.println("\nCustomer Information:");
